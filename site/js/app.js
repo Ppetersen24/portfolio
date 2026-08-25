@@ -505,6 +505,9 @@
   }
 
   function applyRoute() {
+    // The skip link targets #main; that hash is not a route and must not
+    // yank a keyboard user off the view they are on.
+    if (window.location.hash === "#main") return;
     const route = currentRoute();
     $("#top").hidden = route !== "home";
     renderableChapters().forEach((chapter) => {

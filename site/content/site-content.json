@@ -3,7 +3,7 @@
     "title": "Peter Petersen · Résumé & Portfolio",
     "description": "Investment research, analytics, and research automation.",
     "owner": "Peter Petersen",
-    "version": "2.4"
+    "version": "2.5"
   },
   "masthead": {
     "name": "Peter Petersen",
@@ -16,10 +16,9 @@
     "linkedin": "https://www.linkedin.com/in/peter-petersen-49a7182a5",
     "github": "https://github.com/Ppetersen24",
     "site": {
-      "url": "https://peterpetersen.dev",
-      "display": "peterpetersen.dev",
-      "label": "Portfolio",
-      "placeholder": true
+      "url": "https://ppetersen24.github.io/portfolio",
+      "display": "ppetersen24.github.io/portfolio",
+      "label": "Portfolio"
     }
   },
   "chapters": [
