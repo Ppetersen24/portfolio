@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Ten · Representative Reconstruction</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070809'/%3E%3Crect x='0' y='0' width='32' height='1' fill='%23e9ecef' opacity='.55'/%3E%3Ctext x='16' y='21.5' font-family='Helvetica,Arial,sans-serif' font-size='13' font-weight='700' letter-spacing='.5' fill='%23e9ecef' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Inter Tight';src:url('../assets/fonts/InterTight-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter Tight';src:url('../assets/fonts/InterTight-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter Tight';src:url('../assets/fonts/InterTight-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'IBM Plex Mono';src:url('../assets/fonts/PlexMono-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+:root{
+  --bg:#070809; --surface-1:#111317; --surface-2:#181b1f;
+  --text-1:#f3f4f5; --text-2:#a7abb0; --text-3:#6f747a;
+  --rule:#30343a; --rule-soft:#202329; --metal:#60656c; --chrome:#e9ecef;
+  --chrome-grad:linear-gradient(180deg,#aeb3ba 0%,#f5f7f9 34%,#8e939b 58%,#565b62 100%);
+  --sans:'Inter Tight',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Consolas,monospace;
+  --max:1140px; --pad:clamp(22px,5vw,72px);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{background:var(--bg);}
+body{
+  background:linear-gradient(180deg,#0a0b0d 0,var(--bg) 520px),var(--bg);
+  font-family:var(--sans);color:var(--text-2);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(233,236,239,.22);color:var(--text-1);}
+:focus-visible{outline:2px solid var(--chrome);outline-offset:4px;}
+a{color:inherit;}
+
+.page-top{
+  display:flex;justify-content:space-between;align-items:baseline;gap:18px;
+  max-width:var(--max);margin:0 auto;padding:20px var(--pad);
+  border-bottom:1px solid var(--rule-soft);
+}
+.page-top a{
+  font:400 11.5px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-2);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px;
+  transition:color 180ms ease,border-color 180ms ease;
+}
+.page-top a:hover{color:var(--text-1);border-color:var(--chrome);}
+.page-top span{font:400 11.5px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:clamp(48px,6vw,84px) var(--pad) 80px;}
+
+.micro-label{
+  color:var(--text-3);font:400 11px/1.4 var(--mono);
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;
+}
+h1{
+  color:var(--text-1);font-size:clamp(30px,4.6vw,52px);
+  font-weight:700;letter-spacing:-.03em;line-height:1.02;max-width:800px;
+}
+.recon-label{margin-top:22px;font-size:14.5px;line-height:1.75;color:var(--text-2);max-width:66ch;}
+.recon-label strong{color:var(--text-1);font-weight:600;}
+
+/* stage index: the explore-list idiom, hairline rows with chrome numerals */
+.stage-index{margin:clamp(40px,5vw,60px) 0 clamp(48px,6vw,72px);}
+.stage-index__row{
+  display:grid;grid-template-columns:58px 1fr auto;align-items:baseline;gap:18px;
+  padding:18px 4px;border-top:1px solid var(--rule);
+}
+.stage-index__row:last-child{border-bottom:1px solid var(--rule);}
+.stage-index__num{
+  font:400 13px/1 var(--mono);letter-spacing:.08em;
+  background:var(--chrome-grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stage-index__title{color:var(--text-1);font-size:clamp(17px,1.9vw,21px);font-weight:600;letter-spacing:-.01em;}
+.stage-index__meta{font:400 11px/1.6 var(--mono);color:var(--text-3);letter-spacing:.06em;text-align:right;}
+@media(max-width:640px){
+  .stage-index__row{grid-template-columns:44px 1fr;}
+  .stage-index__meta{grid-column:2;text-align:left;}
+}
+
+/* stages: open sections separated by hairlines, no boxes */
+.stage{padding:clamp(40px,5vw,64px) 0;border-top:1px solid var(--rule-soft);}
+.stage-label{
+  color:var(--text-3);font:400 11px/1.4 var(--mono);
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:26px;
+}
+.stage-label b{
+  font-weight:400;
+  background:var(--chrome-grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+h2{
+  color:var(--text-1);font-size:15px;font-weight:600;
+  letter-spacing:.02em;margin-bottom:16px;
+}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,4vw,56px);}
+@media(max-width:860px){.split{grid-template-columns:1fr;}}
+.subhead{font:400 10.5px/1.6 var(--mono);letter-spacing:.12em;color:var(--text-3);text-transform:uppercase;margin-bottom:12px;}
+
+/* factor table */
+table{width:100%;border-collapse:collapse;font-size:14px;}
+th{font:500 10px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);}
+th.num,td.num{text-align:right;font-variant-numeric:tabular-nums;}
+td{padding:10px 8px;border-bottom:1px solid var(--rule-soft);color:var(--text-1);}
+td.fac{font-weight:600;}
+.tbl-note{font:400 10.5px/1.7 var(--mono);color:var(--text-3);margin-top:12px;}
+
+/* sources */
+.src{border-left:1px solid var(--metal);padding:10px 0 10px 16px;margin-bottom:14px;}
+.src:last-child{margin-bottom:0;}
+.src .meta{font:400 10.5px/1.6 var(--mono);color:var(--text-3);letter-spacing:.04em;margin-bottom:5px;}
+.src .meta b{color:var(--text-1);font-weight:500;}
+.src p{font-size:14px;line-height:1.65;color:var(--text-1);}
+
+/* the drafted synopsis: one documentary frame, 1px hairline */
+.card{border:1px solid var(--rule);background:var(--surface-1);}
+.card-head{
+  display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap;
+  padding:18px 24px;border-bottom:1px solid var(--rule-soft);
+}
+.card-head .co{color:var(--text-1);font-size:17px;font-weight:700;letter-spacing:-.01em;}
+.card-head .co span{font:400 10px/1.4 var(--mono);color:var(--text-3);font-weight:400;margin-left:10px;letter-spacing:.08em;}
+.card-head .idx{font:400 10px/1.6 var(--mono);color:var(--text-3);letter-spacing:.1em;text-transform:uppercase;}
+.sec{padding:22px 24px;}
+.sec h3{
+  display:flex;align-items:center;gap:10px;
+  font:400 10.5px/1.4 var(--mono);letter-spacing:.14em;color:var(--text-2);text-transform:uppercase;margin-bottom:12px;
+}
+.sec h3 i{width:14px;height:1px;background:var(--chrome-grad);display:inline-block;}
+.sec p{font-size:14.5px;line-height:1.8;color:var(--text-1);}
+.anchor{
+  font:400 9px/1 var(--mono);color:var(--text-1);
+  border:1px solid var(--metal);border-radius:2px;padding:1px 5px;margin:0 3px;
+  white-space:nowrap;vertical-align:8%;
+}
+
+/* review */
+del{color:var(--text-3);text-decoration:line-through;text-decoration-color:var(--text-2);text-decoration-thickness:1px;}
+ins{text-decoration:none;color:var(--text-1);border-bottom:1px solid var(--chrome);}
+.corr-tag{font:400 10.5px/1.6 var(--mono);color:var(--text-2);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;}
+.corr-text{font-size:14.5px;line-height:1.85;color:var(--text-1);max-width:66ch;}
+.accepted{
+  display:inline-block;margin-top:16px;
+  font:400 11px/1.6 var(--mono);color:var(--text-1);
+  border:1px solid var(--metal);border-radius:2px;padding:9px 15px;background:var(--surface-1);
+}
+.accepted::before{content:"✓ ";color:var(--chrome);}
+
+footer{
+  margin-top:clamp(40px,5vw,64px);border-top:1px solid var(--rule);padding-top:20px;
+  color:var(--text-3);font:400 10.5px/1.9 var(--mono);
+}
+footer a{color:var(--text-2);text-decoration:none;border-bottom:1px dotted var(--metal);}
+footer a:hover{color:var(--text-1);}
+.chain{color:var(--text-2);letter-spacing:.05em;margin-bottom:10px;}
+.chain b{background:var(--chrome-grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;}
+</style>
+</head>
+<body>
+
+<header class="page-top">
+  <a href="../index.html#consulting">← Peter Petersen · Portfolio</a>
+  <span>Supplementary material</span>
+</header>
+
+<main class="wrap">
+
+<p class="micro-label">Top Ten · Representative Reconstruction</p>
+<h1>How one Top Ten synopsis is built</h1>
+<p class="recon-label"><strong>This representative reconstruction uses public sources and synthetic portfolio data.</strong> It follows the Top Ten workflow I built in 2026: each of the ten largest holdings gets its factor data pulled through SQL, published research on the same company is paired in, Claude drafts one synopsis from that material, and an analyst reviews the result. Mercedes-Benz Group AG is used because it connects to my public 2025 equity pitch. The position data, scores, and dates are synthetic. The factor names are generic placeholders. No client, portfolio, or proprietary firm information appears here.</p>
+
+<div class="stage-index" aria-hidden="true">
+  <div class="stage-index__row">
+    <span class="stage-index__num">01</span>
+    <span class="stage-index__title">Inputs</span>
+    <span class="stage-index__meta">SQL factor data · published company research</span>
+  </div>
+  <div class="stage-index__row">
+    <span class="stage-index__num">02</span>
+    <span class="stage-index__title">Draft</span>
+    <span class="stage-index__meta">one synopsis per holding · source markers attached</span>
+  </div>
+  <div class="stage-index__row">
+    <span class="stage-index__num">03</span>
+    <span class="stage-index__title">Review</span>
+    <span class="stage-index__meta">analyst corrections · kept for the next run</span>
+  </div>
+</div>
+
+<!-- 01 · INPUTS -->
+<section class="stage">
+  <p class="stage-label"><b>01</b> · Inputs</p>
+  <div class="split">
+    <div>
+      <h2>Factor data · SQL query output</h2>
+      <div class="subhead">Synthetic scores · generic factor names</div>
+      <table>
+        <thead><tr><th>Factor</th><th class="num">Score · 13 Aug</th></tr></thead>
+        <tbody>
+          <tr><td class="fac">Value</td><td class="num">71</td></tr>
+          <tr><td class="fac">Trajectory</td><td class="num">46</td></tr>
+          <tr><td class="fac">Tone</td><td class="num">55</td></tr>
+          <tr><td class="fac">Durability</td><td class="num">69</td></tr>
+        </tbody>
+      </table>
+      <p class="tbl-note">One query per holding. The values are query output arranged for review.</p>
+    </div>
+    <div>
+      <h2>Company research · public documents</h2>
+      <div class="subhead">Real, verifiable sources paired with the holding</div>
+      <div class="src">
+        <div class="meta"><b>[S1]</b> Mercedes-Benz Group AG · Interim Report, Q2 2026 · 28 Jul 2026</div>
+        <p>Revenue of €32.1B, down 3.3% year over year; adjusted EBIT of €2.3B, up 15.0%. Full-year outlook confirmed.</p>
+      </div>
+      <div class="src">
+        <div class="meta"><b>[S2]</b> Mercedes-Benz Group · Q2 2026 sales release · Jul 2026</div>
+        <p>Group sales of 511,900 units, down 6% on lower China volumes; BEV sales of 63,000 units, up 50%; sales outside China up 3%, led by Europe.</p>
+      </div>
+      <div class="src">
+        <div class="meta"><b>[S3]</b> Q2 2026 results release and capital-market presentation · 28 Jul 2026</div>
+        <p>Product launch programme advancing; Cars performing in line with guidance; strong earnings at Financial Services and Vans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · DRAFT -->
+<section class="stage">
+  <p class="stage-label"><b>02</b> · Draft</p>
+  <h2>The drafted synopsis</h2>
+  <div class="card">
+    <div class="card-head">
+      <div class="co">Mercedes-Benz Group AG<span>XETRA · MBG · SYNTHETIC HOLDING</span></div>
+      <div class="idx">Card 1 of 10 · Q3 2026 prep</div>
+    </div>
+    <div class="sec">
+      <h3><i></i>Synopsis</h3>
+      <p>Mercedes-Benz Group develops and sells premium passenger cars and vans worldwide and operates a financial services arm supporting vehicle sales<span class="anchor">S1</span>. In Q2 2026, revenue fell 3.3% year over year to €32.1B while adjusted EBIT rose 15.0% to €2.3B<span class="anchor">S1</span>. Unit sales declined 6% on China weakness even as BEV volumes grew 50% to 63,000 units and sales outside China rose 3%<span class="anchor">S2</span>. Management confirmed full-year guidance alongside an advancing product launch programme<span class="anchor">S1</span><span class="anchor">S3</span>. Current factor scores: Value 71, Trajectory 46, Tone 55, Durability 69<span class="anchor">FCT</span>.</p>
+    </div>
+  </div>
+  <p class="tbl-note">Every sentence keeps the marker of the source it came from, so the analyst can check any claim against the document behind it.</p>
+</section>
+
+<!-- 03 · REVIEW -->
+<section class="stage">
+  <p class="stage-label"><b>03</b> · Review</p>
+  <h2>Analyst correction, tracked and kept</h2>
+  <div class="corr-tag">analyst edit</div>
+  <p class="corr-text"><del>BEV momentum (+50% YoY [S2]) indicates the electrification transition is on track.</del> <ins>BEV growth of 50% is off a low base [S2]; keep the transition question open until second-half mix data is available.</ins></p>
+  <span class="accepted">Correction accepted into the next run</span>
+</section>
+
+<footer>
+  <div class="chain">SQL FACTOR DATA <b>·</b> PUBLISHED RESEARCH <b>·</b> CLAUDE DRAFT <b>·</b> SOURCES RETAINED <b>·</b> ANALYST REVIEW</div>
+  Public sources: <a href="https://group.mercedes-benz.com/investors/reports-news/interim-reports/q2-2026/" target="_blank" rel="noreferrer">Mercedes-Benz Group · Q2 2026 Interim Report (28 Jul 2026)</a> ·
+  <a href="https://www.marklines.com/en/news/347347" target="_blank" rel="noreferrer">Q2 2026 group sales summary</a> ·
+  <a href="https://www.marklines.com/en/news/348301" target="_blank" rel="noreferrer">Q2 2026 results summary</a><br>
+  Representative reconstruction using public sources and synthetic portfolio data. Factor names are generic placeholders and do not represent any firm's factor model. No client, portfolio, or proprietary firm information. Built by Peter Petersen.
+</footer>
+
+</main>
+</body>
+</html>

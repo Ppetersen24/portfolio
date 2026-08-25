@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "title": "Peter Petersen · Résumé & Portfolio",
+    "description": "Investment research, analytics, and research automation.",
+    "owner": "Peter Petersen",
+    "version": "2.4"
+  },
+  "masthead": {
+    "name": "Peter Petersen",
+    "roleLine": "Investment research · Analytics · Research automation",
+    "about": "I work in investment research and build the systems around it. I like difficult problems, learning what I need, and making the work useful to the person who has to use it next.",
+    "location": "Dana Point, CA",
+    "email": "peterpetersen0806@gmail.com",
+    "phone": "(714) 686-5831",
+    "phoneHref": "+17146865831",
+    "linkedin": "https://www.linkedin.com/in/peter-petersen-49a7182a5",
+    "github": "https://github.com/peterpetersen0806",
+    "site": {
+      "url": "https://peterpetersen.dev",
+      "display": "peterpetersen.dev",
+      "label": "Portfolio",
+      "placeholder": true
+    }
+  },
+  "chapters": [
+    {
+      "id": "uo",
+      "number": "01",
+      "title": "University of Oregon",
+      "navLabel": "Oregon",
+      "years": "2021–2025",
+      "eyebrow": "Eugene, Oregon",
+      "facts": [
+        "B.S. in Business Administration",
+        "Operations & Business Analytics focus",
+        "September 2021 – June 2025"
+      ],
+      "sceneImage": {
+        "id": "uo-landscape",
+        "type": "image",
+        "src": "assets/images/uo-landscape.jpg",
+        "alt": "A bench overlooking Eugene, Oregon",
+        "caption": "Eugene, Oregon",
+        "width": 1536,
+        "height": 2048,
+        "focus": "50% 66%"
+      },
+      "narrative": [
+        "By spring 2023, I had lost track of why I was at Oregon. I hit accounting courses I had little interest in. I spent more time in my fraternity and let school become secondary. My health and life outside class got away from me, and my family and people close to me had to help me pull out of it.",
+        "My grades fell that spring. They came back term by term before the Fisher internship.",
+        "At Fisher, I found that I cared about investment work and technology. I returned to Oregon and completed coursework in Python analytics, predictive modeling, supply chain operations, and business strategy. I graduated in June 2025."
+      ],
+      "artifacts": [],
+      "contextRows": [
+        {
+          "heading": "Alpha Tau Omega",
+          "date": "Chapter Treasurer · 2022–2023",
+          "text": "Managed the operating budget for a 150-member chapter. Audited recurring expenses and cut unused services."
+        },
+        {
+          "heading": "Angry Chickz",
+          "date": "Cashier · 2023",
+          "text": "Worked with customers and built repeat-customer relationships. During that period, the location's Yelp rating rose from 2.5 to 4.5 stars."
+        }
+      ],
+      "keyImage": {
+        "id": "uo-peterson-hall",
+        "type": "image",
+        "src": "assets/images/uo-peterson-hall.jpg",
+        "alt": "Peter Petersen standing in front of the Peterson Hall sign at the University of Oregon",
+        "caption": "Peterson Hall · Lillis Business Complex · University of Oregon",
+        "width": 1350,
+        "height": 1800,
+        "focus": "50% 50%"
+      }
+    },
+    {
+      "id": "fisher",
+      "number": "02",
+      "title": "Fisher Investments",
+      "navLabel": "Fisher",
+      "years": "2024",
+      "eyebrow": "Camas, Washington",
+      "role": "IT Intern · Digital Workspace Endpoint Team",
+      "dates": "June – August 2024",
+      "bullets": [
+        "Taught myself Citrix Server 2019 architecture. Mapped the company-wide endpoint migration and corrected gaps in the implementation documentation.",
+        "Found process changes that moved the migration timeline forward by 30 days.",
+        "Managed service requests and coordinated external contractors in ServiceNow and Jira."
+      ],
+      "result": "Finished first in Fisher Investments' Summer 2024 Stock Market Challenge with a simulated portfolio value of $1,118,961.87.",
+      "artifacts": [
+        {
+          "id": "fisher-leaderboard",
+          "type": "image",
+          "src": "assets/images/fisher-leaderboard-public.png",
+          "alt": "Cropped Fisher Investments Stock Market Challenge leaderboard showing Peter Petersen in first place",
+          "label": "Challenge result",
+          "caption": "Fisher Investments Stock Market Challenge · August 2024",
+          "width": 944,
+          "height": 698,
+          "inline": true
+        }
+      ],
+      "keyImage": {
+        "id": "fisher-photo",
+        "type": "image",
+        "src": "assets/images/fisher-event-public.jpg",
+        "alt": "Peter at a Fisher Investments summer event",
+        "caption": "Camas, Washington · Summer 2024",
+        "width": 593,
+        "height": 1510,
+        "focus": "50% 10%"
+      }
+    },
+    {
+      "id": "sga-intern",
+      "number": "03",
+      "title": "Strategic Global Advisors",
+      "navLabel": "SGA",
+      "years": "2025",
+      "eyebrow": "Newport Beach, California",
+      "role": "Investment Research Analyst Intern",
+      "dates": "July – August 2025",
+      "bullets": [
+        "Built and presented an equity pitch on Mercedes-Benz using bottom-up fundamentals and macroeconomic context. Senior analysts continued the due-diligence process.",
+        "Prototyped a risk-scoring model that assigned probability-weighted risk to price targets as a check on DCF and DDM outputs.",
+        "Worked with the Quant Team on AI-enhanced equity screening and contributed to RFP preparation and ETF analysis.",
+        "Used Bloomberg and FactSet."
+      ],
+      "keyImage": {
+        "id": "sga-presentation",
+        "type": "image",
+        "src": "assets/images/sga-presentation-public.jpg",
+        "alt": "Peter Petersen with a quadruped robot at a Strategic Global Advisors event",
+        "caption": "Newport Beach, California · Summer 2025",
+        "width": 738,
+        "height": 1800,
+        "focus": "50% 8%"
+      }
+    },
+    {
+      "id": "consulting",
+      "number": "04",
+      "title": "Research Automation Consultant",
+      "navLabel": "Consulting",
+      "years": "2026",
+      "dates": "May – August 2026",
+      "org": "Asset management firm",
+      "location": "Newport Beach, CA",
+      "summary": "They asked me back in May 2026. In twelve weeks I built four workflows: one drafts quarter-end commentary, one generates short reports, one starts fundamental review paragraphs, and one briefs the top ten holdings. Working versions went in front of the analysts early, and their corrections went back into the builds.",
+      "systems": [
+        {
+          "name": "Quarter-end Commentary",
+          "flow": "6 years of firm commentary · anonymized context library · first draft",
+          "text": "Parses six years of the firm's quarterly commentary and anonymizes every company, country, and sector reference. The anonymized sentences become drafting context, so each quarter's first draft comes out in the firm's structure and terminology. Analysts review every draft."
+        },
+        {
+          "name": "Short Report Generator",
+          "flow": "~100 published short reports · reusable forensic methods · sourced findings",
+          "text": "Built from roughly 100 published reports by Fuzzy Panda, Hindenburg, and Muddy Waters. Their recurring forensic methods became reusable components. A run applies only the methods relevant to the question, tests counterevidence, and delivers sourced findings, open questions, and next steps."
+        },
+        {
+          "name": "Fundamental Review Paragraph Starter",
+          "flow": "daily screening list · comparison with last review · factual paragraph",
+          "text": "Starts from the day's screening list and compares each name's factor scores, performance, and valuation with its last review. When no recent review exists, the lookback expands to six months. Assembled in Python with no language model."
+        },
+        {
+          "name": "Top Ten",
+          "flow": "SQL factor data + published research · one synopsis per holding · analyst review",
+          "text": "Pulls each top holding's factor data through SQL and pairs it with published research on the same company. Claude drafts the synopsis from that material, and every draft keeps its sources for analyst review."
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "reconstruction",
+          "type": "page",
+          "href": "supplementary/reconstruction.html",
+          "label": "Reconstruction",
+          "caption": "Public sources and synthetic portfolio data. No client, portfolio, or proprietary firm information."
+        }
+      ]
+    }
+  ],
+  "resume": {
+    "pdf": "assets/docs/Peter_Petersen_Resume.pdf",
+    "experience": [
+      {
+        "id": "consulting",
+        "title": "Research Automation Consultant",
+        "location": "Newport Beach, CA",
+        "dates": "May to August 2026",
+        "bullets": [
+          "Returned as a consultant after the 2025 investment research internship. Built four workflows in twelve weeks that draft quarter-end commentary, generate short reports, start fundamental review paragraphs, and brief the top ten holdings.",
+          "Turned roughly 100 published short-seller reports into reusable forensic methods that test counterevidence and deliver sourced findings and open questions.",
+          "Kept sources with every output and folded analyst corrections into later builds; built with SQL, Python (pandas), and Claude skills."
+        ]
+      },
+      {
+        "id": "sga-intern",
+        "title": "Investment Research Analyst Intern",
+        "org": "Strategic Global Advisors",
+        "location": "Newport Beach, CA",
+        "dates": "July to August 2025",
+        "bullets": [
+          "Built and presented an equity pitch on Mercedes-Benz using bottom-up fundamentals and macroeconomic context; senior analysts continued the due-diligence process.",
+          "Prototyped a risk-scoring mechanism assigning probability-weighted risk to price targets as an additional check on DCF and DDM outputs.",
+          "Worked with the Quant Team on AI-enhanced equity screening; contributed to RFP preparation and ETF analysis on Bloomberg and FactSet."
+        ]
+      },
+      {
+        "id": "fisher",
+        "title": "IT Intern, Digital Workspace Endpoint Team",
+        "org": "Fisher Investments",
+        "location": "Camas, WA",
+        "dates": "June to August 2024",
+        "bullets": [
+          "Taught myself Citrix Server 2019 architecture to map and document a company-wide endpoint migration; identified and corrected gaps in the documentation the implementation team depended on.",
+          "Found process changes that moved the migration timeline forward by 30 days; managed service requests and external contractors in ServiceNow and Jira.",
+          "Placed first in the firm's Summer 2024 Stock Market Challenge, finishing with a simulated portfolio value of $1,118,961.87."
+        ]
+      }
+    ],
+    "education": {
+      "school": "University of Oregon",
+      "degree": "B.S. in Business Administration",
+      "focus": "Operations & Business Analytics",
+      "dates": "September 2021 to June 2025",
+      "coursework": [
+        "Python Data Analytics",
+        "Predictive Modeling",
+        "Supply Chain Operations",
+        "Business Strategy",
+        "Statistics"
+      ]
+    },
+    "additionalExperience": [
+      {
+        "role": "Chapter Treasurer",
+        "org": "Alpha Tau Omega",
+        "dates": "2022–2023",
+        "text": "Managed the operating budget for a 150-member chapter. Audited recurring expenses and cut unused services."
+      },
+      {
+        "role": "Cashier",
+        "org": "Angry Chickz",
+        "dates": "2023",
+        "text": "Built repeat-customer relationships during a period when the location's Yelp rating rose from 2.5 to 4.5 stars."
+      }
+    ]
+  },
+  "skills": {
+    "programming": [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "PyTorch",
+      "matplotlib",
+      "Plotly",
+      "SQL",
+      "R"
+    ],
+    "tools": [
+      "Excel",
+      "Bloomberg",
+      "FactSet",
+      "Power BI",
+      "ServiceNow",
+      "Jira",
+      "Visio",
+      "Claude SDK / CLI"
+    ],
+    "methods": [
+      "Regression analysis",
+      "Forecasting",
+      "Statistical modeling",
+      "Factor-based frameworks",
+      "Retrieval workflows"
+    ]
+  },
+  "awards": [
+    "1st place · Fisher Investments Stock Market Challenge · 2024",
+    "Eagle Scout",
+    "Student-Athlete Academic Excellence Award",
+    "Black Belt · Moo Yea Do"
+  ],
+  "supplementary": [
+    {
+      "id": "resume-pdf",
+      "label": "Résumé PDF",
+      "type": "file",
+      "href": "assets/docs/Peter_Petersen_Resume.pdf"
+    },
+    {
+      "id": "uo-peterson-hall",
+      "label": "Peterson Hall",
+      "type": "image",
+      "src": "assets/images/uo-peterson-hall.jpg",
+      "caption": "Peterson Hall · Lillis Business Complex · University of Oregon",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "id": "uo-landscape",
+      "label": "Eugene",
+      "type": "image",
+      "src": "assets/images/uo-landscape.jpg",
+      "caption": "Eugene, Oregon",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "id": "fisher-leaderboard",
+      "label": "Challenge result",
+      "type": "image",
+      "src": "assets/images/fisher-leaderboard-public.png",
+      "caption": "Fisher Investments Stock Market Challenge · August 2024",
+      "width": 944,
+      "height": 698
+    },
+    {
+      "id": "fisher-photo",
+      "label": "Fisher event photo",
+      "type": "image",
+      "src": "assets/images/fisher-event-public.jpg",
+      "caption": "Camas, Washington · Summer 2024",
+      "width": 593,
+      "height": 1510
+    },
+    {
+      "id": "sga-presentation",
+      "label": "Strategic Global Advisors event",
+      "type": "image",
+      "src": "assets/images/sga-presentation-public.jpg",
+      "caption": "Newport Beach, California · Summer 2025",
+      "width": 738,
+      "height": 1800
+    },
+    {
+      "id": "eagle-scout",
+      "label": "Eagle Scout",
+      "type": "image",
+      "src": "assets/images/eagle-scout-public.jpg",
+      "alt": "Peter Petersen in a Boy Scouts of America uniform on a trail",
+      "caption": "Boy Scouts of America · 2019",
+      "width": 864,
+      "height": 1800
+    },
+    {
+      "id": "reconstruction",
+      "label": "Representative reconstruction",
+      "type": "page",
+      "href": "supplementary/reconstruction.html"
+    }
+  ]
+}

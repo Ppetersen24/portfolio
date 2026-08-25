@@ -1,0 +1,11 @@
+# The public repo contains ONLY the served site and the deploy workflow.
+# Everything else in this project (CLAUDE.md, project_docs/, source_material/,
+# scripts/, local tooling) is private working material and must never be
+# committed. Allowlist style: ignore all top-level entries, then re-include.
+/*
+!/site
+!/.github
+!/.gitignore
+
+# never any OS cruft, anywhere
+.DS_Store

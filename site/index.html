@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Investment research, analytics, and research automation.">
+  <meta property="og:title" content="Peter Petersen · Résumé &amp; Portfolio">
+  <meta property="og:description" content="Investment research, analytics, and research automation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070809'/%3E%3Crect x='0' y='0' width='32' height='1' fill='%23e9ecef' opacity='.55'/%3E%3Ctext x='16' y='21.5' font-family='Helvetica,Arial,sans-serif' font-size='13' font-weight='700' letter-spacing='.5' fill='%23e9ecef' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+  <title>Peter Petersen · Résumé &amp; Portfolio</title>
+  <link rel="preload" href="assets/fonts/InterTight-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/InterTight-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css?v=2.4">
+  <link rel="stylesheet" href="css/base.css?v=2.4">
+  <link rel="stylesheet" href="css/components.css?v=2.4">
+  <link rel="stylesheet" href="css/responsive.css?v=2.4">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <a class="site-header__name" href="#top" aria-label="Peter Petersen, back to top"><span class="label-full">Peter Petersen</span><span class="label-short" aria-hidden="true">PP</span></a>
+    <nav class="site-nav" aria-label="Primary navigation" id="siteNav"></nav>
+    <div class="site-header__actions">
+      <button class="text-button nav-toggle" type="button" data-toggle-index aria-controls="siteNav" aria-expanded="false">Index</button>
+      <button class="text-button" type="button" data-open-materials aria-controls="materialsDrawer" aria-expanded="false">Materials</button>
+      <a class="chrome-button chrome-button--small" href="assets/docs/Peter_Petersen_Resume.pdf" download aria-label="Download résumé PDF"><span class="label-full">Résumé PDF</span><span class="label-short" aria-hidden="true">PDF</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="masthead" aria-labelledby="mastheadName"></section>
+    <div id="chapters"></div>
+    <section id="capabilities" class="resume-layer" aria-labelledby="capabilitiesTitle"></section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter"></footer>
+
+  <div class="drawer-scrim" id="drawerScrim" hidden></div>
+  <aside class="materials-drawer" id="materialsDrawer" role="dialog" aria-modal="true" aria-labelledby="materialsTitle" aria-hidden="true" inert>
+    <div class="materials-drawer__top">
+      <div>
+        <p class="micro-label">Supplementary material</p>
+        <h2 id="materialsTitle">Materials</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-materials aria-label="Close materials">×</button>
+    </div>
+    <div class="materials-list" id="materialsList"></div>
+  </aside>
+
+  <dialog class="artifact-dialog" id="artifactDialog" aria-labelledby="artifactDialogTitle">
+    <div class="artifact-dialog__top">
+      <div>
+        <p class="micro-label" id="artifactDialogType">Artifact</p>
+        <h2 id="artifactDialogTitle">Artifact</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-dialog aria-label="Close artifact">×</button>
+    </div>
+    <div class="artifact-dialog__body" id="artifactDialogBody"></div>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">This site uses JavaScript to load its content and open the supplementary material.</div>
+  </noscript>
+
+  <script src="js/app.js?v=2.4" defer></script>
+</body>
+</html>
