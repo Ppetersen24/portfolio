@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Peter Petersen · Résumé & Portfolio",
-    "description": "Investment research, analytics, and research automation.",
+    "description": "Investment research, AI automation, and analytics.",
     "owner": "Peter Petersen",
     "version": "2.5"
   },
   "masthead": {
     "name": "Peter Petersen",
-    "roleLine": "Investment research · Analytics · Research automation",
-    "about": "I work in investment research and build the systems around it. I like difficult problems, learning what I need, and making the work useful to the person who has to use it next.",
+    "roleLine": "Investment research · AI automation · Analytics",
+    "about": "I work in investment research and AI automation, and build the systems around both. I like difficult problems, learning what I need, and making the work useful to the person who has to use it next.",
     "location": "Dana Point, CA",
     "email": "peterpetersen0806@gmail.com",
     "phone": "(714) 686-5831",
@@ -45,9 +45,8 @@
         "focus": "50% 66%"
       },
       "narrative": [
-        "By spring 2023, I had lost track of why I was at Oregon. I hit accounting courses I had little interest in. I spent more time in my fraternity and let school become secondary. My health and life outside class got away from me, and my family and people close to me had to help me pull out of it.",
-        "My grades fell that spring. They came back term by term before the Fisher internship.",
-        "At Fisher, I found that I cared about investment work and technology. I returned to Oregon and completed coursework in Python analytics, predictive modeling, supply chain operations, and business strategy. I graduated in June 2025."
+        "I studied Business Administration with a focus in Operations & Business Analytics. Most of my coursework was quantitative: Python data analytics, predictive modeling, statistics, and supply chain operations, alongside business strategy and finance.",
+        "The analytics sequence is where I learned to work with data: cleaning and structuring datasets in Python and pandas, building regression and forecasting models, and presenting the results. The operations courses covered process mapping, inventory, and supply chain design. I graduated in June 2025."
       ],
       "artifacts": [],
       "contextRows": [
